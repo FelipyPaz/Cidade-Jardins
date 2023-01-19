@@ -3,32 +3,26 @@ import Logo from "../../assets/Logo.svg";
 import {
   Container,
   ContainerItens,
-  Left,
-  Right,
   Img,
   Label,
   Button,
   P,
   Input,
   H1,
-} from "./style";
+} from "./style"; 
 
 export function Login() {
   return (
     <Container>
+      <Img src={Logo} alt="Bandeira da cidade " />
       <ContainerItens>
-        <Left>
-          <Img src={Logo} alt="Bandeira da cidade " />
-          <P>escola municipal cidade jardins </P>
-        </Left>
-        <Right>
-          <H1>login</H1>
-          <Label>E-mail</Label>
-          <Input />
-          <Label>Senha</Label>
-          <Input />
-          <Button>Sing up</Button>
-        </Right>
+        <P>Escola Municipal Cidade Jardins </P>
+        <H1>Login</H1>
+        <Label>E-mail</Label>
+        <Input />
+        <Label>Senha</Label>
+        <Input />
+        <Button>Sing up</Button>
       </ContainerItens>
     </Container>
   );
